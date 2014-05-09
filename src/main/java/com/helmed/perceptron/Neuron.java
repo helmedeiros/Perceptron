@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.posweb.redesneurais.perceptron;
+package com.helmed.perceptron;
 
 /**
  * Makes predictions based on a linear predictor function combining a set of weights with the feature vector.
@@ -52,7 +52,7 @@ public class Neuron {
 	/**
 	 *
 	 */
-	public void training(double[] x1, double[] x2, double[] d, String predictorFunction) {
+	public void training(double[] x1, double[] x2, double[] d) {
 		for (int i = 0; i < x1.length; i++) {
 			
 			double saida = inputs(x1[i], x2[i]);
